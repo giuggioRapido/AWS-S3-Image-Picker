@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC0D0A781BD03BE200DE25CE /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0D0A761BD03BE200DE25CE /* AWSCore.framework */; };
+		DC0D0A791BD03BE200DE25CE /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0D0A771BD03BE200DE25CE /* AWSS3.framework */; };
+		DC0D0A7B1BD03BEE00DE25CE /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0D0A7A1BD03BEE00DE25CE /* AWSCognito.framework */; };
+		DC3CA3AA1B9F40F0001BC4A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3CA3A91B9F40F0001BC4A1 /* main.m */; };
+		DC3CA3AD1B9F40F0001BC4A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3CA3AC1B9F40F0001BC4A1 /* AppDelegate.m */; };
+		DC3CA3B31B9F40F0001BC4A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3CA3B11B9F40F0001BC4A1 /* Main.storyboard */; };
+		DC3CA3B51B9F40F0001BC4A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3CA3B41B9F40F0001BC4A1 /* Images.xcassets */; };
+		DC3CA3B81B9F40F0001BC4A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC3CA3B61B9F40F0001BC4A1 /* LaunchScreen.xib */; };
+		DC3CA3C41B9F40F0001BC4A1 /* AmazonS3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3CA3C31B9F40F0001BC4A1 /* AmazonS3Tests.m */; };
+		DC3CA3D51B9F8B1D001BC4A1 /* UploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3CA3D41B9F8B1D001BC4A1 /* UploadViewController.m */; };
+		DC3CA3D81B9F8B27001BC4A1 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3CA3D71B9F8B27001BC4A1 /* DownloadViewController.m */; };
+		DC3CA3E21B9FB600001BC4A1 /* UploadIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3CA3E11B9FB600001BC4A1 /* UploadIcon.png */; };
+		DC3CA3E71BA08C42001BC4A1 /* DownloadIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3CA3E51BA08C42001BC4A1 /* DownloadIcon.png */; };
+		DC3CA3E81BA08C42001BC4A1 /* DownloadIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3CA3E61BA08C42001BC4A1 /* DownloadIcon@2x.png */; };
+		DC3CA3EA1BA0C737001BC4A1 /* UploadIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3CA3E91BA0C737001BC4A1 /* UploadIcon@2x.png */; };
+		DC3F7BE81BA33AC900C86AC9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3F7BDC1BA3317500C86AC9 /* SystemConfiguration.framework */; };
+		DC3F7BE91BA33AD000C86AC9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3F7BDE1BA3317A00C86AC9 /* libz.dylib */; };
+		DC3F7BEA1BA33AD800C86AC9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3F7BE01BA3317E00C86AC9 /* libsqlite3.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC3CA3BE1B9F40F0001BC4A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC3CA39C1B9F40F0001BC4A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC3CA3A31B9F40F0001BC4A1;
+			remoteInfo = AmazonS3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC0D0A761BD03BE200DE25CE /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = "../aws-ios-sdk-2.2.7/frameworks/AWSCore.framework"; sourceTree = "<group>"; };
+		DC0D0A771BD03BE200DE25CE /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = "../aws-ios-sdk-2.2.7/frameworks/AWSS3.framework"; sourceTree = "<group>"; };
+		DC0D0A7A1BD03BEE00DE25CE /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = "../aws-ios-sdk-2.2.7/frameworks/extras/AWSCognito.framework"; sourceTree = "<group>"; };
+		DC3CA3A41B9F40F0001BC4A1 /* AmazonS3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazonS3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC3CA3A81B9F40F0001BC4A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC3CA3A91B9F40F0001BC4A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC3CA3AB1B9F40F0001BC4A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC3CA3AC1B9F40F0001BC4A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC3CA3B21B9F40F0001BC4A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC3CA3B41B9F40F0001BC4A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DC3CA3B71B9F40F0001BC4A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DC3CA3BD1B9F40F0001BC4A1 /* AmazonS3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmazonS3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC3CA3C21B9F40F0001BC4A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC3CA3C31B9F40F0001BC4A1 /* AmazonS3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazonS3Tests.m; sourceTree = "<group>"; };
+		DC3CA3D31B9F8B1D001BC4A1 /* UploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadViewController.h; sourceTree = "<group>"; };
+		DC3CA3D41B9F8B1D001BC4A1 /* UploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadViewController.m; sourceTree = "<group>"; };
+		DC3CA3D61B9F8B27001BC4A1 /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		DC3CA3D71B9F8B27001BC4A1 /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		DC3CA3E11B9FB600001BC4A1 /* UploadIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UploadIcon.png; sourceTree = "<group>"; };
+		DC3CA3E51BA08C42001BC4A1 /* DownloadIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownloadIcon.png; sourceTree = "<group>"; };
+		DC3CA3E61BA08C42001BC4A1 /* DownloadIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DownloadIcon@2x.png"; sourceTree = "<group>"; };
+		DC3CA3E91BA0C737001BC4A1 /* UploadIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UploadIcon@2x.png"; sourceTree = "<group>"; };
+		DC3F7BDC1BA3317500C86AC9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DC3F7BDE1BA3317A00C86AC9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DC3F7BE01BA3317E00C86AC9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DC3F7BE21BA331D300C86AC9 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = "../aws-ios-sdk-2.2.5/frameworks/AWSCore.framework"; sourceTree = "<group>"; };
+		DC3F7BE41BA331DE00C86AC9 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = "../aws-ios-sdk-2.2.5/frameworks/AWSS3.framework"; sourceTree = "<group>"; };
+		DC3F7BE61BA331E900C86AC9 /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = "../aws-ios-sdk-2.2.5/frameworks/extras/AWSCognito.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC3CA3A11B9F40F0001BC4A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0D0A7B1BD03BEE00DE25CE /* AWSCognito.framework in Frameworks */,
+				DC0D0A781BD03BE200DE25CE /* AWSCore.framework in Frameworks */,
+				DC0D0A791BD03BE200DE25CE /* AWSS3.framework in Frameworks */,
+				DC3F7BEA1BA33AD800C86AC9 /* libsqlite3.dylib in Frameworks */,
+				DC3F7BE91BA33AD000C86AC9 /* libz.dylib in Frameworks */,
+				DC3F7BE81BA33AC900C86AC9 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3CA3BA1B9F40F0001BC4A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC3CA39B1B9F40F0001BC4A1 = {
+			isa = PBXGroup;
+			children = (
+				DC0D0A7A1BD03BEE00DE25CE /* AWSCognito.framework */,
+				DC0D0A761BD03BE200DE25CE /* AWSCore.framework */,
+				DC0D0A771BD03BE200DE25CE /* AWSS3.framework */,
+				DC3F7BE61BA331E900C86AC9 /* AWSCognito.framework */,
+				DC3F7BE41BA331DE00C86AC9 /* AWSS3.framework */,
+				DC3F7BE21BA331D300C86AC9 /* AWSCore.framework */,
+				DC3F7BE01BA3317E00C86AC9 /* libsqlite3.dylib */,
+				DC3F7BDE1BA3317A00C86AC9 /* libz.dylib */,
+				DC3F7BDC1BA3317500C86AC9 /* SystemConfiguration.framework */,
+				DC3CA3A61B9F40F0001BC4A1 /* AmazonS3 */,
+				DC3CA3C01B9F40F0001BC4A1 /* AmazonS3Tests */,
+				DC3CA3A51B9F40F0001BC4A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC3CA3A51B9F40F0001BC4A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC3CA3A41B9F40F0001BC4A1 /* AmazonS3.app */,
+				DC3CA3BD1B9F40F0001BC4A1 /* AmazonS3Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC3CA3A61B9F40F0001BC4A1 /* AmazonS3 */ = {
+			isa = PBXGroup;
+			children = (
+				DC3CA3AB1B9F40F0001BC4A1 /* AppDelegate.h */,
+				DC3CA3AC1B9F40F0001BC4A1 /* AppDelegate.m */,
+				DC3CA3D31B9F8B1D001BC4A1 /* UploadViewController.h */,
+				DC3CA3D41B9F8B1D001BC4A1 /* UploadViewController.m */,
+				DC3CA3D61B9F8B27001BC4A1 /* DownloadViewController.h */,
+				DC3CA3D71B9F8B27001BC4A1 /* DownloadViewController.m */,
+				DC3CA3E11B9FB600001BC4A1 /* UploadIcon.png */,
+				DC3CA3E91BA0C737001BC4A1 /* UploadIcon@2x.png */,
+				DC3CA3E51BA08C42001BC4A1 /* DownloadIcon.png */,
+				DC3CA3E61BA08C42001BC4A1 /* DownloadIcon@2x.png */,
+				DC3CA3B11B9F40F0001BC4A1 /* Main.storyboard */,
+				DC3CA3B41B9F40F0001BC4A1 /* Images.xcassets */,
+				DC3CA3B61B9F40F0001BC4A1 /* LaunchScreen.xib */,
+				DC3CA3A71B9F40F0001BC4A1 /* Supporting Files */,
+			);
+			path = AmazonS3;
+			sourceTree = "<group>";
+		};
+		DC3CA3A71B9F40F0001BC4A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC3CA3A81B9F40F0001BC4A1 /* Info.plist */,
+				DC3CA3A91B9F40F0001BC4A1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC3CA3C01B9F40F0001BC4A1 /* AmazonS3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DC3CA3C31B9F40F0001BC4A1 /* AmazonS3Tests.m */,
+				DC3CA3C11B9F40F0001BC4A1 /* Supporting Files */,
+			);
+			path = AmazonS3Tests;
+			sourceTree = "<group>";
+		};
+		DC3CA3C11B9F40F0001BC4A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC3CA3C21B9F40F0001BC4A1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC3CA3A31B9F40F0001BC4A1 /* AmazonS3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC3CA3C71B9F40F0001BC4A1 /* Build configuration list for PBXNativeTarget "AmazonS3" */;
+			buildPhases = (
+				DC3CA3A01B9F40F0001BC4A1 /* Sources */,
+				DC3CA3A11B9F40F0001BC4A1 /* Frameworks */,
+				DC3CA3A21B9F40F0001BC4A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmazonS3;
+			productName = AmazonS3;
+			productReference = DC3CA3A41B9F40F0001BC4A1 /* AmazonS3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC3CA3BC1B9F40F0001BC4A1 /* AmazonS3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC3CA3CA1B9F40F0001BC4A1 /* Build configuration list for PBXNativeTarget "AmazonS3Tests" */;
+			buildPhases = (
+				DC3CA3B91B9F40F0001BC4A1 /* Sources */,
+				DC3CA3BA1B9F40F0001BC4A1 /* Frameworks */,
+				DC3CA3BB1B9F40F0001BC4A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC3CA3BF1B9F40F0001BC4A1 /* PBXTargetDependency */,
+			);
+			name = AmazonS3Tests;
+			productName = AmazonS3Tests;
+			productReference = DC3CA3BD1B9F40F0001BC4A1 /* AmazonS3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC3CA39C1B9F40F0001BC4A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Prince Fungus";
+				TargetAttributes = {
+					DC3CA3A31B9F40F0001BC4A1 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = LK75LRUFXF;
+					};
+					DC3CA3BC1B9F40F0001BC4A1 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = DC3CA3A31B9F40F0001BC4A1;
+					};
+				};
+			};
+			buildConfigurationList = DC3CA39F1B9F40F0001BC4A1 /* Build configuration list for PBXProject "AmazonS3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC3CA39B1B9F40F0001BC4A1;
+			productRefGroup = DC3CA3A51B9F40F0001BC4A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC3CA3A31B9F40F0001BC4A1 /* AmazonS3 */,
+				DC3CA3BC1B9F40F0001BC4A1 /* AmazonS3Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC3CA3A21B9F40F0001BC4A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3CA3B31B9F40F0001BC4A1 /* Main.storyboard in Resources */,
+				DC3CA3EA1BA0C737001BC4A1 /* UploadIcon@2x.png in Resources */,
+				DC3CA3E81BA08C42001BC4A1 /* DownloadIcon@2x.png in Resources */,
+				DC3CA3B81B9F40F0001BC4A1 /* LaunchScreen.xib in Resources */,
+				DC3CA3B51B9F40F0001BC4A1 /* Images.xcassets in Resources */,
+				DC3CA3E71BA08C42001BC4A1 /* DownloadIcon.png in Resources */,
+				DC3CA3E21B9FB600001BC4A1 /* UploadIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3CA3BB1B9F40F0001BC4A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC3CA3A01B9F40F0001BC4A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3CA3D51B9F8B1D001BC4A1 /* UploadViewController.m in Sources */,
+				DC3CA3AD1B9F40F0001BC4A1 /* AppDelegate.m in Sources */,
+				DC3CA3D81B9F8B27001BC4A1 /* DownloadViewController.m in Sources */,
+				DC3CA3AA1B9F40F0001BC4A1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3CA3B91B9F40F0001BC4A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3CA3C41B9F40F0001BC4A1 /* AmazonS3Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC3CA3BF1B9F40F0001BC4A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC3CA3A31B9F40F0001BC4A1 /* AmazonS3 */;
+			targetProxy = DC3CA3BE1B9F40F0001BC4A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC3CA3B11B9F40F0001BC4A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC3CA3B21B9F40F0001BC4A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC3CA3B61B9F40F0001BC4A1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC3CA3B71B9F40F0001BC4A1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC3CA3C51B9F40F0001BC4A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DC3CA3C61B9F40F0001BC4A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC3CA3C81B9F40F0001BC4A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../aws-ios-sdk-2.2.5/frameworks/**";
+				INFOPLIST_FILE = AmazonS3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.princefungus.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		DC3CA3C91B9F40F0001BC4A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../aws-ios-sdk-2.2.5/frameworks/**";
+				INFOPLIST_FILE = AmazonS3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.princefungus.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		DC3CA3CB1B9F40F0001BC4A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AmazonS3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.princefungus.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmazonS3.app/AmazonS3";
+			};
+			name = Debug;
+		};
+		DC3CA3CC1B9F40F0001BC4A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AmazonS3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.princefungus.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmazonS3.app/AmazonS3";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC3CA39F1B9F40F0001BC4A1 /* Build configuration list for PBXProject "AmazonS3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC3CA3C51B9F40F0001BC4A1 /* Debug */,
+				DC3CA3C61B9F40F0001BC4A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC3CA3C71B9F40F0001BC4A1 /* Build configuration list for PBXNativeTarget "AmazonS3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC3CA3C81B9F40F0001BC4A1 /* Debug */,
+				DC3CA3C91B9F40F0001BC4A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC3CA3CA1B9F40F0001BC4A1 /* Build configuration list for PBXNativeTarget "AmazonS3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC3CA3CB1B9F40F0001BC4A1 /* Debug */,
+				DC3CA3CC1B9F40F0001BC4A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC3CA39C1B9F40F0001BC4A1 /* Project object */;
+}
